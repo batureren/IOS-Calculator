@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    font-weight: 700;
+    margin-top: 10px;
+    min-width: 550px;
+    position: relative;
+}
+
+.iphone{
+pointer-events: none;
+   position: absolute;
+   z-index: 2;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: black;
+    color: white;
+    gap: 10px;
+    border-radius: 80px;
+    padding: 40px 30px 70px 30px;
+    z-index: 1;
+}
+
+.buttons{
+    background: #333333;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.yellow{
+    background-color: #F1A33C;
+}
+
+.dark{
+    background-color: #A5A5A5;
+    color: black;
+}
+
+.icons, .calculator{
+    grid-column: span 4;
+}
+
+.double{
+    grid-column: span 2;
+    justify-content: start;
+    border-radius:55px;
+    padding-left: 40px ;
+}
+
+.buttons:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
